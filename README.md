@@ -1,101 +1,71 @@
-# Time Series Analysis Dashboard in R Shiny
-## 📊 Overview
-This is an interactive and educational Shiny web application for time series analysis. The dashboard supports graphical exploration, stationarity checks, decomposition, model fitting (ARIMA, ARCH, GARCH), diagnostics, and forecasting.
+
+# 📊 Time Series Analysis Dashboard (R Shiny App)
+
+This interactive **R Shiny dashboard** is designed for end-to-end time series analysis — from **uploading CSV data** to performing **modeling, forecasting, and diagnostics**. Whether you're working with ARIMA, SARIMA, ARCH, or GARCH models, this dashboard gives you the tools to explore, visualize, and forecast like a pro.
+
+🔗 **Live GitHub Repository:** [https://github.com/dikshasrivastava30/R-Shiny](https://github.com/dikshasrivastava30/R-Shiny)  
+👤 **Connect on LinkedIn:** [Diksha Srivastava](https://www.linkedin.com/in/diksha-srivastava-8b02a3262/)
+
+---
 
 ## 🚀 Features
-Upload and analyze time series data from a CSV file
 
-Perform EDA: handle missing and duplicate values
+- 📂 Upload your own CSV files
+- 🧪 Automatic Exploratory Data Analysis (EDA)
+- 📉 Visualize original and stationary series with ACF & PACF plots
+- ⚙️ Fit models: ARIMA, Auto ARIMA, SARIMA, ARCH, GARCH
+- 📈 Generate forecasts with customizable horizon
+- 🔍 Perform residual and volatility diagnostics
 
-View ACF/PACF plots for both original and transformed data
+---
 
-Auto-transform data for stationarity (differencing, log transformation)
+## 🛠 How to Use
 
-Conduct Augmented Dickey-Fuller (ADF) test
+1. **Clone the Repo**:
+   ```bash
+   git clone https://github.com/dikshasrivastava30/R-Shiny.git
+   ```
 
-Model suggestions: AR, MA, ARIMA, ARCH, GARCH
+2. **Open R or RStudio**  
+   Navigate to the folder and open `app.R`.
 
-Residual diagnostics including Ljung-Box test
+3. **Run the App**:
+   ```r
+   shiny::runApp()
+   ```
 
-Forecast future values with user-defined horizons
+4. **Use the UI to**:
+   - Upload your dataset (CSV format)
+   - Select a column for time series analysis
+   - Visualize trends and transformations
+   - Choose a modeling technique
+   - Forecast future values
+   - Analyze residuals and GARCH volatility
 
-Download results and plots
+---
 
-## ⚙️ Getting Started
-Installation
-Install required packages in R:
+## 💡 Sample Use Cases
 
-## 📌 Usage Instructions
-Upload a CSV file containing time series data
+- Academic research in time series forecasting
+- Financial volatility modeling using ARCH/GARCH
+- Seasonal sales prediction with SARIMA
+- Teaching time series concepts interactively
 
-Select the relevant time series column
+---
 
-Explore the data in the EDA tab
+## 👨‍👩‍👧‍👦 Team Credits
 
-View ACF/PACF plots for raw and transformed data
+Proudly built with my amazing teammates:
 
-Let the app apply necessary transformations automatically
+- **Diksha Srivastava**  
+- **Diya George**  
+- **Dhanushri BN**  
+- **Nidhi Shreevastav**  
+- **Umang Daga**  
 
-Choose a model manually or use automatic suggestions
+Under the invaluable guidance of **Dr. Dibu A S**
 
-Forecast future values by setting a forecast horizon
+---
 
-Download the results and visualizations
-
-## 📖 Interpretation Guide
-EDA
-Missing values → imputed using mean
-
-Duplicate entries → removed
-
-Trend and seasonality → visualized
-
-Stationarity
-ADF Test:
-
-p < 0.05 → stationary
-
-Otherwise, differencing/log transformation is applied
-
-ACF/PACF
-Cutoff patterns help identify appropriate AR/MA orders
-
-Model Selection
-auto.arima() suggests best ARIMA(p, d, q) model
-
-ARCH/GARCH models suggested when volatility clustering is detected
-
-Diagnostics
-Residuals should resemble white noise
-
-Ljung-Box test:
-
-p > 0.05 → no autocorrelation in residuals
-
-Forecasting
-Users specify the forecast horizon
-
-Forecasts include 95% confidence intervals
-
-## 📦 Dependencies
-shiny
-
-ggplot2
-
-forecast
-
-tseries
-
-rugarch
-
-zoo
-
-FinTS
-
-TTR
-
-dplyr
-
-## 👥 Credits
-Developed by a 5-member academic team as part of an advanced time series analysis project.
-
+📌 _Have questions or want to contribute?_  
+Let’s connect on [LinkedIn](https://www.linkedin.com/in/diksha-srivastava-8b02a3262/) and explore ideas together!
