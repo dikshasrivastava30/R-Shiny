@@ -1,8 +1,8 @@
-#Time Series Analysis Dashboard in R Shiny
-##📊 Overview
+# Time Series Analysis Dashboard in R Shiny
+## 📊 Overview
 This is an interactive and educational Shiny web application for time series analysis. The dashboard supports graphical exploration, stationarity checks, decomposition, model fitting (ARIMA, ARCH, GARCH), diagnostics, and forecasting.
 
-##🚀 Features
+## 🚀 Features
 Upload and analyze time series data from a CSV file
 
 Perform EDA: handle missing and duplicate values
@@ -21,11 +21,11 @@ Forecast future values with user-defined horizons
 
 Download results and plots
 
-##⚙️ Getting Started
+## ⚙️ Getting Started
 Installation
 Install required packages in R:
 
-##📌 Usage Instructions
+## 📌 Usage Instructions
 Upload a CSV file containing time series data
 
 Select the relevant time series column
@@ -42,7 +42,7 @@ Forecast future values by setting a forecast horizon
 
 Download the results and visualizations
 
-##📖 Interpretation Guide
+## 📖 Interpretation Guide
 EDA
 Missing values → imputed using mean
 
@@ -77,7 +77,7 @@ Users specify the forecast horizon
 
 Forecasts include 95% confidence intervals
 
-##📦 Dependencies
+## 📦 Dependencies
 shiny
 
 ggplot2
@@ -96,6 +96,6 @@ TTR
 
 dplyr
 
-##👥 Credits
+## 👥 Credits
 Developed by a 5-member academic team as part of an advanced time series analysis project.
 
